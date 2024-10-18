@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f7f9;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+}
+
+.navbar ul{
+    display:flex;
+    list-style-type: none;
+}
+
+.navbar ul li{
+    margin-left: 20px;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    width: 100%;
+    height: 300px; 
+    background-image: url('heropic.jpg'); 
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 0; 
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1; 
+}
+
+
+.benefits, .carousel, .testimonials, .contact-form, footer{
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.features {
+    display:flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.feature{
+    background: white;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.carousel-imgs {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+    gap: 20px; 
+    padding: 20px;
+    background-color: #f0f8ff; 
+}
+
+.img-placeholder {
+    width: 300px; 
+    height: 200px; 
+    overflow: hidden; 
+    background-color: #e0e0e0; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.img-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 8px; 
+    transition: transform 0.3s ease; 
+}
+
+.img-placeholder img:hover {
+    transform: scale(1.05); 
+}
+
+.test-box{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.test{
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact-form form{
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label{
+    margin:10px 0 5px;
+}
+
+.contact-form input, .contact-form textarea{
+    padding:10px;
+    margin-bottom: 20px;
+    border: 1px soild #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding:10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+}
+
+.app-links img {
+    width: 100px;
+    margin: 0 10px;
+}
